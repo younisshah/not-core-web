@@ -11,6 +11,13 @@ pipeline {
 
     stages {
 
+       stage("install-deps) {
+            steps {
+                echo "Installing dependencies..."
+                sh 'npm install'
+            }
+        }
+
         stage("check-python") {
             steps {
                 sh 'python --version'
