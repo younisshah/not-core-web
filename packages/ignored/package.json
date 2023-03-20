@@ -1,0 +1,13 @@
+{
+  "name": "shared",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "devDependencies": {},
+  "scripts": {
+    "install:ci": "npm install",
+    "build": "tsc index.ts --outDir dist"
+  },
+  "dependencies": {
+    "child1": "*"
+  }
+}
