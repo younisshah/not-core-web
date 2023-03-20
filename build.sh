@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -z "${PREVIOUS_SUCCESSFUL_COMMIT}" ]; then
+if [ -z "${PREVIOUS_SUCCESSFUL_COMMIT}" ] || [ "${PREVIOUS_SUCCESSFUL_COMMIT}" = "null" ]; then
   echo "[build]: PREVIOUS_SUCCESSFUL_COMMIT is empty, using HEAD~1"
   PREVIOUS_SUCCESSFUL_COMMIT="HEAD~1"
 else
