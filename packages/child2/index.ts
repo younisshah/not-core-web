@@ -1,5 +1,5 @@
 import { log } from '../shared';
 
-export function bazQux() {
-  log('Running second child');
+export function bazQux(msg = 'default') {
+  log(`Running second child app with message: ${msg}`);
 }
