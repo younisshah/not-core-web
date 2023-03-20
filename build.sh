@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [[ -z "${PREVIOUS_SUCCESSFUL_COMMIT}" ]]; then
   PREVIOUS_SUCCESSFUL_COMMIT="HEAD~1"
