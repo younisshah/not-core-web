@@ -13,9 +13,18 @@ gitGraph
     commit id:"commit#1"
     commit id:"commit#2"
     commit id:"commit#3"
-    commit id:"commit#4"
+    commit id:"commit#4" tag: "merge-base"
     branch feature
     checkout feature
     commit id:"commit#21" tag: "HEAD~1"
     commit id:"commit#22" tag: "HEAD"
+```
+
+```mermaid
+flowchart TD;
+    commit#1-->commit#2
+    commit#2-->commit#3
+    commit#3-->commit#4
+    commit#2-->commit#21 
+    commit#21-->commit#22
 ```

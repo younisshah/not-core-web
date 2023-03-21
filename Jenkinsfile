@@ -17,6 +17,14 @@ pipeline {
             }
         }
 
+        stage("prepare") {
+            steps {
+                echo "Preparing..."
+                sh 'chmod +x prepare.sh'
+                sh 'sh prepare.sh'
+            }
+        }
+
         stage("affected") {
             steps {
                 echo "Affected packages..."
