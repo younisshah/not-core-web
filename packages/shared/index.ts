@@ -1,3 +1,3 @@
 export function log(msg: unknown) {
-  console.log(`[log] ${new Date()} ${msg}`);
+  console.log(`[debug] at ${new Date()} ${msg}`);
 }

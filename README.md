@@ -23,8 +23,12 @@ gitGraph
 ```mermaid
 flowchart TD;
     commit#1-->commit#2
-    commit#2-->commit#3
-    commit#3-->commit#4
+    commit#2:::deployed-->commit#3
+    commit#3:::error-->commit#4:::ok
     commit#2-->commit#21 
     commit#21-->commit#22
+    
+    classDef error fill:red,color:white
+    classDef ok fill:green,color:white
+    classDef deployed fill:blue,color:white
 ```
