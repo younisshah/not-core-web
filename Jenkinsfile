@@ -7,6 +7,7 @@ pipeline {
 
     environment {
         PREVIOUS_SUCCESSFUL_COMMIT = "${env.GIT_PREVIOUS_SUCCESSFUL_COMMIT ?: 'HEAD~1'}"
+        FOO_BAR = "{env.ERROR ?: 'DEFAULT FOO BAR'}"
     }
 
     stages {
