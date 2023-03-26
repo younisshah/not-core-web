@@ -3,7 +3,7 @@ const execSync = require('child_process').execSync;
 function getAffectedWidgets(base = process.env.PREVIOUS_SUCCESSFUL_COMMIT) {
   try {
     return execSync(
-      `nx print-affected --target=build --base=${base} --head=HEAD --select=projects`
+      `npx nx print-affected --target=build --base=${base} --head=HEAD --select=projects`
     )
       ?.toString('utf8')
       ?.trim()
